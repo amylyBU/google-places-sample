@@ -15,6 +15,8 @@
 		EE3D02051BB4477700F3C73B /* LevelUp_SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02041BB4477700F3C73B /* LevelUp_SampleUITests.m */; };
 		EE3D02181BB44C5500F3C73B /* LUPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02161BB44C5500F3C73B /* LUPlacesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EE3D02191BB44C5500F3C73B /* LUPlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		EE3D021E1BB450CE00F3C73B /* LUPlacesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D021C1BB450CE00F3C73B /* LUPlacesTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		EE3D021F1BB450CE00F3C73B /* LUPlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		EE3D02151BB44C5500F3C73B /* LUPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUPlacesViewController.h; path = "View Controllers/LUPlacesViewController.h"; sourceTree = "<group>"; };
 		EE3D02161BB44C5500F3C73B /* LUPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUPlacesViewController.m; path = "View Controllers/LUPlacesViewController.m"; sourceTree = "<group>"; };
 		EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LUPlacesViewController.xib; path = "View Controllers/LUPlacesViewController.xib"; sourceTree = "<group>"; };
+		EE3D021B1BB450CE00F3C73B /* LUPlacesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUPlacesTableViewCell.h; path = Views/LUPlacesTableViewCell.h; sourceTree = "<group>"; };
+		EE3D021C1BB450CE00F3C73B /* LUPlacesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUPlacesTableViewCell.m; path = Views/LUPlacesTableViewCell.m; sourceTree = "<group>"; };
+		EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LUPlacesTableViewCell.xib; path = Views/LUPlacesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		EE3D01DE1BB4477600F3C73B /* LevelUp-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				EE3D021A1BB4509100F3C73B /* Views */,
 				EE3D02141BB44B4900F3C73B /* Models */,
 				EE3D02131BB44B2E00F3C73B /* Services */,
 				EE3D02121BB44AF700F3C73B /* View Controllers */,
@@ -162,6 +168,16 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		EE3D021A1BB4509100F3C73B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D021B1BB450CE00F3C73B /* LUPlacesTableViewCell.h */,
+				EE3D021C1BB450CE00F3C73B /* LUPlacesTableViewCell.m */,
+				EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +286,7 @@
 			files = (
 				EE3D01EF1BB4477700F3C73B /* LaunchScreen.storyboard in Resources */,
 				EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */,
+				EE3D021F1BB450CE00F3C73B /* LUPlacesTableViewCell.xib in Resources */,
 				EE3D02191BB44C5500F3C73B /* LUPlacesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +314,7 @@
 			files = (
 				EE3D02181BB44C5500F3C73B /* LUPlacesViewController.m in Sources */,
 				EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */,
+				EE3D021E1BB450CE00F3C73B /* LUPlacesTableViewCell.m in Sources */,
 				EE3D01E11BB4477600F3C73B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

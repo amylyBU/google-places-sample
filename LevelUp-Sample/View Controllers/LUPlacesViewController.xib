@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LUPlacesViewController">
             <connections>
+                <outlet property="placesTableView" destination="cUu-Bi-O9U" id="AH0-1R-xOM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +14,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cUu-Bi-O9U">
+                    <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="QKB-B1-F90"/>
+                        <outlet property="delegate" destination="-1" id="a3L-gS-twM"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAO-UZ-k8H">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvS-ow-4qn">
+                            <rect key="frame" x="230" y="38" width="141" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yvS-ow-4qn" firstAttribute="centerY" secondItem="AAO-UZ-k8H" secondAttribute="centerY" id="2ag-9r-3XT"/>
+                        <constraint firstAttribute="height" constant="100" id="Hhy-84-eNd"/>
+                        <constraint firstItem="yvS-ow-4qn" firstAttribute="centerX" secondItem="AAO-UZ-k8H" secondAttribute="centerX" id="NVy-ZP-5R3"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cUu-Bi-O9U" secondAttribute="bottom" id="EZ0-dV-rfr"/>
+                <constraint firstItem="cUu-Bi-O9U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FCb-1x-IrF"/>
+                <constraint firstItem="AAO-UZ-k8H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZND-cK-TTM"/>
+                <constraint firstAttribute="trailing" secondItem="cUu-Bi-O9U" secondAttribute="trailing" id="Zhk-dX-sSi"/>
+                <constraint firstItem="AAO-UZ-k8H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e7c-Fh-7gq"/>
+                <constraint firstAttribute="trailing" secondItem="AAO-UZ-k8H" secondAttribute="trailing" id="mk6-M9-86v"/>
+                <constraint firstItem="cUu-Bi-O9U" firstAttribute="top" secondItem="AAO-UZ-k8H" secondAttribute="bottom" id="v3h-Qd-CfN"/>
+            </constraints>
         </view>
     </objects>
 </document>
