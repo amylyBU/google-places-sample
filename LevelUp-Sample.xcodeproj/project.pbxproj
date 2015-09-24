@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE3D01E11BB4477600F3C73B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E01BB4477600F3C73B /* main.m */; };
+		EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E31BB4477600F3C73B /* AppDelegate.m */; };
+		EE3D01E71BB4477700F3C73B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E61BB4477700F3C73B /* ViewController.m */; };
+		EE3D01EA1BB4477700F3C73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01E81BB4477700F3C73B /* Main.storyboard */; };
+		EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01EB1BB4477700F3C73B /* Assets.xcassets */; };
+		EE3D01EF1BB4477700F3C73B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */; };
+		EE3D01FA1BB4477700F3C73B /* LevelUp_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01F91BB4477700F3C73B /* LevelUp_SampleTests.m */; };
+		EE3D02051BB4477700F3C73B /* LevelUp_SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02041BB4477700F3C73B /* LevelUp_SampleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE3D01F61BB4477700F3C73B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE3D01D41BB4477600F3C73B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3D01DB1BB4477600F3C73B;
+			remoteInfo = "LevelUp-Sample";
+		};
+		EE3D02011BB4477700F3C73B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE3D01D41BB4477600F3C73B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3D01DB1BB4477600F3C73B;
+			remoteInfo = "LevelUp-Sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE3D01DC1BB4477600F3C73B /* LevelUp-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LevelUp-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3D01E01BB4477600F3C73B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE3D01E21BB4477600F3C73B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE3D01E31BB4477600F3C73B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE3D01E51BB4477600F3C73B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE3D01E61BB4477700F3C73B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE3D01E91BB4477700F3C73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE3D01EB1BB4477700F3C73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE3D01EE1BB4477700F3C73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE3D01F01BB4477700F3C73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3D01F51BB4477700F3C73B /* LevelUp-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LevelUp-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3D01F91BB4477700F3C73B /* LevelUp_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelUp_SampleTests.m; sourceTree = "<group>"; };
+		EE3D01FB1BB4477700F3C73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3D02001BB4477700F3C73B /* LevelUp-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LevelUp-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3D02041BB4477700F3C73B /* LevelUp_SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelUp_SampleUITests.m; sourceTree = "<group>"; };
+		EE3D02061BB4477700F3C73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE3D01D91BB4477600F3C73B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3D01F21BB4477700F3C73B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3D01FD1BB4477700F3C73B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE3D01D31BB4477600F3C73B = {
+			isa = PBXGroup;
+			children = (
+				EE3D01DE1BB4477600F3C73B /* LevelUp-Sample */,
+				EE3D01F81BB4477700F3C73B /* LevelUp-SampleTests */,
+				EE3D02031BB4477700F3C73B /* LevelUp-SampleUITests */,
+				EE3D01DD1BB4477600F3C73B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE3D01DD1BB4477600F3C73B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D01DC1BB4477600F3C73B /* LevelUp-Sample.app */,
+				EE3D01F51BB4477700F3C73B /* LevelUp-SampleTests.xctest */,
+				EE3D02001BB4477700F3C73B /* LevelUp-SampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3D01DE1BB4477600F3C73B /* LevelUp-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D01E21BB4477600F3C73B /* AppDelegate.h */,
+				EE3D01E31BB4477600F3C73B /* AppDelegate.m */,
+				EE3D01E51BB4477600F3C73B /* ViewController.h */,
+				EE3D01E61BB4477700F3C73B /* ViewController.m */,
+				EE3D01E81BB4477700F3C73B /* Main.storyboard */,
+				EE3D01EB1BB4477700F3C73B /* Assets.xcassets */,
+				EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */,
+				EE3D01F01BB4477700F3C73B /* Info.plist */,
+				EE3D01DF1BB4477600F3C73B /* Supporting Files */,
+			);
+			path = "LevelUp-Sample";
+			sourceTree = "<group>";
+		};
+		EE3D01DF1BB4477600F3C73B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D01E01BB4477600F3C73B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE3D01F81BB4477700F3C73B /* LevelUp-SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D01F91BB4477700F3C73B /* LevelUp_SampleTests.m */,
+				EE3D01FB1BB4477700F3C73B /* Info.plist */,
+			);
+			path = "LevelUp-SampleTests";
+			sourceTree = "<group>";
+		};
+		EE3D02031BB4477700F3C73B /* LevelUp-SampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D02041BB4477700F3C73B /* LevelUp_SampleUITests.m */,
+				EE3D02061BB4477700F3C73B /* Info.plist */,
+			);
+			path = "LevelUp-SampleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE3D01DB1BB4477600F3C73B /* LevelUp-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3D02091BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-Sample" */;
+			buildPhases = (
+				EE3D01D81BB4477600F3C73B /* Sources */,
+				EE3D01D91BB4477600F3C73B /* Frameworks */,
+				EE3D01DA1BB4477600F3C73B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LevelUp-Sample";
+			productName = "LevelUp-Sample";
+			productReference = EE3D01DC1BB4477600F3C73B /* LevelUp-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE3D01F41BB4477700F3C73B /* LevelUp-SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3D020C1BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-SampleTests" */;
+			buildPhases = (
+				EE3D01F11BB4477700F3C73B /* Sources */,
+				EE3D01F21BB4477700F3C73B /* Frameworks */,
+				EE3D01F31BB4477700F3C73B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3D01F71BB4477700F3C73B /* PBXTargetDependency */,
+			);
+			name = "LevelUp-SampleTests";
+			productName = "LevelUp-SampleTests";
+			productReference = EE3D01F51BB4477700F3C73B /* LevelUp-SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE3D01FF1BB4477700F3C73B /* LevelUp-SampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3D020F1BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-SampleUITests" */;
+			buildPhases = (
+				EE3D01FC1BB4477700F3C73B /* Sources */,
+				EE3D01FD1BB4477700F3C73B /* Frameworks */,
+				EE3D01FE1BB4477700F3C73B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3D02021BB4477700F3C73B /* PBXTargetDependency */,
+			);
+			name = "LevelUp-SampleUITests";
+			productName = "LevelUp-SampleUITests";
+			productReference = EE3D02001BB4477700F3C73B /* LevelUp-SampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE3D01D41BB4477600F3C73B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Amy Ly";
+				TargetAttributes = {
+					EE3D01DB1BB4477600F3C73B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					EE3D01F41BB4477700F3C73B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = EE3D01DB1BB4477600F3C73B;
+					};
+					EE3D01FF1BB4477700F3C73B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = EE3D01DB1BB4477600F3C73B;
+					};
+				};
+			};
+			buildConfigurationList = EE3D01D71BB4477600F3C73B /* Build configuration list for PBXProject "LevelUp-Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE3D01D31BB4477600F3C73B;
+			productRefGroup = EE3D01DD1BB4477600F3C73B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE3D01DB1BB4477600F3C73B /* LevelUp-Sample */,
+				EE3D01F41BB4477700F3C73B /* LevelUp-SampleTests */,
+				EE3D01FF1BB4477700F3C73B /* LevelUp-SampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE3D01DA1BB4477600F3C73B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3D01EF1BB4477700F3C73B /* LaunchScreen.storyboard in Resources */,
+				EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */,
+				EE3D01EA1BB4477700F3C73B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3D01F31BB4477700F3C73B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3D01FE1BB4477700F3C73B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE3D01D81BB4477600F3C73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3D01E71BB4477700F3C73B /* ViewController.m in Sources */,
+				EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */,
+				EE3D01E11BB4477600F3C73B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3D01F11BB4477700F3C73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3D01FA1BB4477700F3C73B /* LevelUp_SampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3D01FC1BB4477700F3C73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3D02051BB4477700F3C73B /* LevelUp_SampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE3D01F71BB4477700F3C73B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3D01DB1BB4477600F3C73B /* LevelUp-Sample */;
+			targetProxy = EE3D01F61BB4477700F3C73B /* PBXContainerItemProxy */;
+		};
+		EE3D02021BB4477700F3C73B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3D01DB1BB4477600F3C73B /* LevelUp-Sample */;
+			targetProxy = EE3D02011BB4477700F3C73B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE3D01E81BB4477700F3C73B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3D01E91BB4477700F3C73B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3D01EE1BB4477700F3C73B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE3D02071BB4477700F3C73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE3D02081BB4477700F3C73B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE3D020A1BB4477700F3C73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "LevelUp-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE3D020B1BB4477700F3C73B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "LevelUp-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE3D020D1BB4477700F3C73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LevelUp-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LevelUp-Sample.app/LevelUp-Sample";
+			};
+			name = Debug;
+		};
+		EE3D020E1BB4477700F3C73B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LevelUp-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LevelUp-Sample.app/LevelUp-Sample";
+			};
+			name = Release;
+		};
+		EE3D02101BB4477700F3C73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LevelUp-SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "LevelUp-Sample";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EE3D02111BB4477700F3C73B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LevelUp-SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "LevelUp-Sample";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE3D01D71BB4477600F3C73B /* Build configuration list for PBXProject "LevelUp-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3D02071BB4477700F3C73B /* Debug */,
+				EE3D02081BB4477700F3C73B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3D02091BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3D020A1BB4477700F3C73B /* Debug */,
+				EE3D020B1BB4477700F3C73B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE3D020C1BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3D020D1BB4477700F3C73B /* Debug */,
+				EE3D020E1BB4477700F3C73B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE3D020F1BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-SampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3D02101BB4477700F3C73B /* Debug */,
+				EE3D02111BB4477700F3C73B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE3D01D41BB4477600F3C73B /* Project object */;
+}
