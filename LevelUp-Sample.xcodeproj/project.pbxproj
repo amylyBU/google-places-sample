@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		EE3D01E11BB4477600F3C73B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E01BB4477600F3C73B /* main.m */; };
 		EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E31BB4477600F3C73B /* AppDelegate.m */; };
-		EE3D01E71BB4477700F3C73B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E61BB4477700F3C73B /* ViewController.m */; };
-		EE3D01EA1BB4477700F3C73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01E81BB4477700F3C73B /* Main.storyboard */; };
 		EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01EB1BB4477700F3C73B /* Assets.xcassets */; };
 		EE3D01EF1BB4477700F3C73B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */; };
 		EE3D01FA1BB4477700F3C73B /* LevelUp_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01F91BB4477700F3C73B /* LevelUp_SampleTests.m */; };
 		EE3D02051BB4477700F3C73B /* LevelUp_SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02041BB4477700F3C73B /* LevelUp_SampleUITests.m */; };
+		EE3D02181BB44C5500F3C73B /* LUPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02161BB44C5500F3C73B /* LUPlacesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		EE3D02191BB44C5500F3C73B /* LUPlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,6 @@
 		EE3D01E01BB4477600F3C73B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE3D01E21BB4477600F3C73B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE3D01E31BB4477600F3C73B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EE3D01E51BB4477600F3C73B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EE3D01E61BB4477700F3C73B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EE3D01E91BB4477700F3C73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE3D01EB1BB4477700F3C73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE3D01EE1BB4477700F3C73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE3D01F01BB4477700F3C73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +48,9 @@
 		EE3D02001BB4477700F3C73B /* LevelUp-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LevelUp-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3D02041BB4477700F3C73B /* LevelUp_SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelUp_SampleUITests.m; sourceTree = "<group>"; };
 		EE3D02061BB4477700F3C73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3D02151BB44C5500F3C73B /* LUPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUPlacesViewController.h; path = "View Controllers/LUPlacesViewController.h"; sourceTree = "<group>"; };
+		EE3D02161BB44C5500F3C73B /* LUPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUPlacesViewController.m; path = "View Controllers/LUPlacesViewController.m"; sourceTree = "<group>"; };
+		EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LUPlacesViewController.xib; path = "View Controllers/LUPlacesViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 		EE3D01DE1BB4477600F3C73B /* LevelUp-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				EE3D02141BB44B4900F3C73B /* Models */,
+				EE3D02131BB44B2E00F3C73B /* Services */,
+				EE3D02121BB44AF700F3C73B /* View Controllers */,
 				EE3D01E21BB4477600F3C73B /* AppDelegate.h */,
 				EE3D01E31BB4477600F3C73B /* AppDelegate.m */,
-				EE3D01E51BB4477600F3C73B /* ViewController.h */,
-				EE3D01E61BB4477700F3C73B /* ViewController.m */,
-				EE3D01E81BB4477700F3C73B /* Main.storyboard */,
 				EE3D01EB1BB4477700F3C73B /* Assets.xcassets */,
 				EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */,
 				EE3D01F01BB4477700F3C73B /* Info.plist */,
@@ -138,6 +138,30 @@
 				EE3D02061BB4477700F3C73B /* Info.plist */,
 			);
 			path = "LevelUp-SampleUITests";
+			sourceTree = "<group>";
+		};
+		EE3D02121BB44AF700F3C73B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D02151BB44C5500F3C73B /* LUPlacesViewController.h */,
+				EE3D02161BB44C5500F3C73B /* LUPlacesViewController.m */,
+				EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EE3D02131BB44B2E00F3C73B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		EE3D02141BB44B4900F3C73B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +231,7 @@
 				TargetAttributes = {
 					EE3D01DB1BB4477600F3C73B = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RP4T66VR66;
 					};
 					EE3D01F41BB4477700F3C73B = {
 						CreatedOnToolsVersion = 7.0;
@@ -245,7 +270,7 @@
 			files = (
 				EE3D01EF1BB4477700F3C73B /* LaunchScreen.storyboard in Resources */,
 				EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */,
-				EE3D01EA1BB4477700F3C73B /* Main.storyboard in Resources */,
+				EE3D02191BB44C5500F3C73B /* LUPlacesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3D01E71BB4477700F3C73B /* ViewController.m in Sources */,
+				EE3D02181BB44C5500F3C73B /* LUPlacesViewController.m in Sources */,
 				EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */,
 				EE3D01E11BB4477600F3C73B /* main.m in Sources */,
 			);
@@ -308,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE3D01E81BB4477700F3C73B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE3D01E91BB4477700F3C73B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "LevelUp-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +442,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "LevelUp-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "amyly6393.LevelUp-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

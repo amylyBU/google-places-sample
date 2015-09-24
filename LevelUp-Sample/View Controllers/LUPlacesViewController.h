@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LUPlacesViewController.h
 //  LevelUp-Sample
 //
 //  Created by Amy Ly on 9/24/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LUPlacesViewController : UIViewController
 
 @end
-
