@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMaps;
 
 @interface LUPlacesTableViewCell : UITableViewCell
+
+- (void)configureCellForGMSPlace:(GMSPlace *)place;
 
 @end

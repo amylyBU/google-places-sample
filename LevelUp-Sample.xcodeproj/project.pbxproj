@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8B5D6530C66C29F30DCA88E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519D55E2881F1D1E5196E913 /* libPods.a */; };
 		EE3D01E11BB4477600F3C73B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E01BB4477600F3C73B /* main.m */; };
 		EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D01E31BB4477600F3C73B /* AppDelegate.m */; };
 		EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3D01EB1BB4477700F3C73B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		EE3D02191BB44C5500F3C73B /* LUPlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		EE3D021E1BB450CE00F3C73B /* LUPlacesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D021C1BB450CE00F3C73B /* LUPlacesTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		EE3D021F1BB450CE00F3C73B /* LUPlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		EE3D02281BB45AB000F3C73B /* LUService.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02271BB45AB000F3C73B /* LUService.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		277A715CDA5C3E42964BF3BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		519D55E2881F1D1E5196E913 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C980DA33B30369BA9CCDC178 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3D01DC1BB4477600F3C73B /* LevelUp-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LevelUp-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3D01E01BB4477600F3C73B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE3D01E21BB4477600F3C73B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +61,8 @@
 		EE3D021B1BB450CE00F3C73B /* LUPlacesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUPlacesTableViewCell.h; path = Views/LUPlacesTableViewCell.h; sourceTree = "<group>"; };
 		EE3D021C1BB450CE00F3C73B /* LUPlacesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUPlacesTableViewCell.m; path = Views/LUPlacesTableViewCell.m; sourceTree = "<group>"; };
 		EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LUPlacesTableViewCell.xib; path = Views/LUPlacesTableViewCell.xib; sourceTree = "<group>"; };
+		EE3D02261BB45AB000F3C73B /* LUService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUService.h; path = Services/LUService.h; sourceTree = "<group>"; };
+		EE3D02271BB45AB000F3C73B /* LUService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUService.m; path = Services/LUService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B5D6530C66C29F30DCA88E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B01F0F8E37D0D7350A7481 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				519D55E2881F1D1E5196E913 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B12FE752DE467E13D67F2AE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C980DA33B30369BA9CCDC178 /* Pods.debug.xcconfig */,
+				277A715CDA5C3E42964BF3BD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE3D01D31BB4477600F3C73B = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +115,8 @@
 				EE3D01F81BB4477700F3C73B /* LevelUp-SampleTests */,
 				EE3D02031BB4477700F3C73B /* LevelUp-SampleUITests */,
 				EE3D01DD1BB4477600F3C73B /* Products */,
+				B12FE752DE467E13D67F2AE8 /* Pods */,
+				28B01F0F8E37D0D7350A7481 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +186,8 @@
 		EE3D02131BB44B2E00F3C73B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EE3D02261BB45AB000F3C73B /* LUService.h */,
+				EE3D02271BB45AB000F3C73B /* LUService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -187,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3D02091BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-Sample" */;
 			buildPhases = (
+				7EE18CAA1C41F04EA4B01687 /* Check Pods Manifest.lock */,
 				EE3D01D81BB4477600F3C73B /* Sources */,
 				EE3D01D91BB4477600F3C73B /* Frameworks */,
 				EE3D01DA1BB4477600F3C73B /* Resources */,
+				EFF3C8EDD03F932C409731B6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,6 +338,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EE18CAA1C41F04EA4B01687 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF3C8EDD03F932C409731B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE3D01D81BB4477600F3C73B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -315,6 +379,7 @@
 				EE3D02181BB44C5500F3C73B /* LUPlacesViewController.m in Sources */,
 				EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */,
 				EE3D021E1BB450CE00F3C73B /* LUPlacesTableViewCell.m in Sources */,
+				EE3D02281BB45AB000F3C73B /* LUService.m in Sources */,
 				EE3D01E11BB4477600F3C73B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +509,7 @@
 		};
 		EE3D020A1BB4477700F3C73B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C980DA33B30369BA9CCDC178 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -458,6 +524,7 @@
 		};
 		EE3D020B1BB4477700F3C73B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277A715CDA5C3E42964BF3BD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -537,6 +604,7 @@
 				EE3D020B1BB4477700F3C73B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE3D020C1BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +613,7 @@
 				EE3D020E1BB4477700F3C73B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE3D020F1BB4477700F3C73B /* Build configuration list for PBXNativeTarget "LevelUp-SampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +622,7 @@
 				EE3D02111BB4477700F3C73B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LUPlacesViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [GMSServices provideAPIKey:@"AIzaSyBq6tmcS4pEnwg6LNyuXzoqgVCu85N-0Ek"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[LUPlacesViewController alloc] init];
     [self.window makeKeyAndVisible];

@@ -8,7 +8,16 @@
 
 #import "LUPlacesTableViewCell.h"
 
+@interface LUPlacesTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@end
+
 @implementation LUPlacesTableViewCell
 
+- (void)configureCellForGMSPlace:(GMSPlace *)place {
+    self.nameLabel.text = place.name;
+}
 
 @end
