@@ -11,6 +11,8 @@
 
 @interface LUPlacesTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) GMSPlace *place;
+
 - (void)configureCellForGMSPlace:(GMSPlace *)place;
 
 @end

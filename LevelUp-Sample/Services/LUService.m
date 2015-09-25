@@ -10,7 +10,6 @@
 #import "LUPlacesViewController.h"
 @import GoogleMaps;
 
-
 static LUService *_shared;
 NSString * const kLocationsDidUpdateNotification = @"kLocationsDidUpdateNotification";
 

@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cUu-Bi-O9U">
-                    <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="QKB-B1-F90"/>
@@ -24,10 +24,10 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAO-UZ-k8H">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvS-ow-4qn">
-                            <rect key="frame" x="230" y="38" width="141" height="24"/>
+                            <rect key="frame" x="230" y="18" width="141" height="24"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="yvS-ow-4qn" firstAttribute="centerY" secondItem="AAO-UZ-k8H" secondAttribute="centerY" id="2ag-9r-3XT"/>
-                        <constraint firstAttribute="height" constant="100" id="Hhy-84-eNd"/>
+                        <constraint firstAttribute="height" constant="60" id="Hhy-84-eNd"/>
                         <constraint firstItem="yvS-ow-4qn" firstAttribute="centerX" secondItem="AAO-UZ-k8H" secondAttribute="centerX" id="NVy-ZP-5R3"/>
                     </constraints>
                 </view>

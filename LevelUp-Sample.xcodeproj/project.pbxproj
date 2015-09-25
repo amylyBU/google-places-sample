@@ -19,6 +19,9 @@
 		EE3D021E1BB450CE00F3C73B /* LUPlacesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D021C1BB450CE00F3C73B /* LUPlacesTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		EE3D021F1BB450CE00F3C73B /* LUPlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		EE3D02281BB45AB000F3C73B /* LUService.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02271BB45AB000F3C73B /* LUService.m */; settings = {ASSET_TAGS = (); }; };
+		EE3D02301BB4EA5100F3C73B /* LUPlaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D022E1BB4EA5100F3C73B /* LUPlaceDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		EE3D02311BB4EA5100F3C73B /* LUPlaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D022F1BB4EA5100F3C73B /* LUPlaceDetailViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		EE3D02381BB592BA00F3C73B /* GMSPlace+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D02371BB592BA00F3C73B /* GMSPlace+Formatting.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LUPlacesTableViewCell.xib; path = Views/LUPlacesTableViewCell.xib; sourceTree = "<group>"; };
 		EE3D02261BB45AB000F3C73B /* LUService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUService.h; path = Services/LUService.h; sourceTree = "<group>"; };
 		EE3D02271BB45AB000F3C73B /* LUService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUService.m; path = Services/LUService.m; sourceTree = "<group>"; };
+		EE3D022C1BB4E32C00F3C73B /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		EE3D022D1BB4EA5100F3C73B /* LUPlaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUPlaceDetailViewController.h; path = "View Controllers/LUPlaceDetailViewController.h"; sourceTree = "<group>"; };
+		EE3D022E1BB4EA5100F3C73B /* LUPlaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUPlaceDetailViewController.m; path = "View Controllers/LUPlaceDetailViewController.m"; sourceTree = "<group>"; };
+		EE3D022F1BB4EA5100F3C73B /* LUPlaceDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LUPlaceDetailViewController.xib; path = "View Controllers/LUPlaceDetailViewController.xib"; sourceTree = "<group>"; };
+		EE3D02361BB592BA00F3C73B /* GMSPlace+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GMSPlace+Formatting.h"; path = "Categories/GMSPlace+Formatting.h"; sourceTree = "<group>"; };
+		EE3D02371BB592BA00F3C73B /* GMSPlace+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GMSPlace+Formatting.m"; path = "Categories/GMSPlace+Formatting.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +142,7 @@
 		EE3D01DE1BB4477600F3C73B /* LevelUp-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				EE3D02351BB5920B00F3C73B /* Categories */,
 				EE3D021A1BB4509100F3C73B /* Views */,
 				EE3D02141BB44B4900F3C73B /* Models */,
 				EE3D02131BB44B2E00F3C73B /* Services */,
@@ -140,8 +150,6 @@
 				EE3D01E21BB4477600F3C73B /* AppDelegate.h */,
 				EE3D01E31BB4477600F3C73B /* AppDelegate.m */,
 				EE3D01EB1BB4477700F3C73B /* Assets.xcassets */,
-				EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */,
-				EE3D01F01BB4477700F3C73B /* Info.plist */,
 				EE3D01DF1BB4477600F3C73B /* Supporting Files */,
 			);
 			path = "LevelUp-Sample";
@@ -150,6 +158,9 @@
 		EE3D01DF1BB4477600F3C73B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE3D01ED1BB4477700F3C73B /* LaunchScreen.storyboard */,
+				EE3D01F01BB4477700F3C73B /* Info.plist */,
+				EE3D022C1BB4E32C00F3C73B /* Location.gpx */,
 				EE3D01E01BB4477600F3C73B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -179,6 +190,9 @@
 				EE3D02151BB44C5500F3C73B /* LUPlacesViewController.h */,
 				EE3D02161BB44C5500F3C73B /* LUPlacesViewController.m */,
 				EE3D02171BB44C5500F3C73B /* LUPlacesViewController.xib */,
+				EE3D022D1BB4EA5100F3C73B /* LUPlaceDetailViewController.h */,
+				EE3D022E1BB4EA5100F3C73B /* LUPlaceDetailViewController.m */,
+				EE3D022F1BB4EA5100F3C73B /* LUPlaceDetailViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -207,6 +221,15 @@
 				EE3D021D1BB450CE00F3C73B /* LUPlacesTableViewCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		EE3D02351BB5920B00F3C73B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D02361BB592BA00F3C73B /* GMSPlace+Formatting.h */,
+				EE3D02371BB592BA00F3C73B /* GMSPlace+Formatting.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3D02311BB4EA5100F3C73B /* LUPlaceDetailViewController.xib in Resources */,
 				EE3D01EF1BB4477700F3C73B /* LaunchScreen.storyboard in Resources */,
 				EE3D01EC1BB4477700F3C73B /* Assets.xcassets in Resources */,
 				EE3D021F1BB450CE00F3C73B /* LUPlacesTableViewCell.xib in Resources */,
@@ -378,8 +402,10 @@
 			files = (
 				EE3D02181BB44C5500F3C73B /* LUPlacesViewController.m in Sources */,
 				EE3D01E41BB4477600F3C73B /* AppDelegate.m in Sources */,
+				EE3D02381BB592BA00F3C73B /* GMSPlace+Formatting.m in Sources */,
 				EE3D021E1BB450CE00F3C73B /* LUPlacesTableViewCell.m in Sources */,
 				EE3D02281BB45AB000F3C73B /* LUService.m in Sources */,
+				EE3D02301BB4EA5100F3C73B /* LUPlaceDetailViewController.m in Sources */,
 				EE3D01E11BB4477600F3C73B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
