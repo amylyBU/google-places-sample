@@ -8,6 +8,7 @@
 
 #import "LUPlacesViewController.h"
 #import "LUPlacesTableViewCell.h"
+#import "UIScrollView+SVPullToRefresh.h"
 #import "LUService.h"
 @import GoogleMaps;
 
@@ -16,57 +17,52 @@ static NSString * const kLUPlacesTableViewCellIdentifier = @"LUPlacesCellIdentif
 @interface LUPlacesViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *placesTableView;
-@property (strong, nonatomic) NSArray *nearbyLocations;
 
 @end
 
-@implementation LUPlacesViewController {
-    GMSPlacesClient *_placesClient;
-}
+@implementation LUPlacesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableView];
-    [self getNearbyLocations];
+    [[LUService shared] getNearbyLocations];
 }
 
 - (void)setUpTableView {
     self.placesTableView.delegate = self;
     self.placesTableView.dataSource = self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTableViewContents:) name:kLocationsDidUpdateNotification object:[LUService shared]];
     [self.placesTableView registerNib:[UINib nibWithNibName:@"LUPlacesTableViewCell" bundle:nil] forCellReuseIdentifier:kLUPlacesTableViewCellIdentifier];
     self.placesTableView.estimatedRowHeight = UITableViewAutomaticDimension;
-}
-
-- (void)getNearbyLocations {
-    _placesClient = [GMSPlacesClient sharedClient];
-    
-    [_placesClient currentPlaceWithCallback:^(GMSPlaceLikelihoodList * _Nullable likelihoodList, NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"ERROR %@", [error localizedDescription]);
-            return;
-        }
-        
-        self.nearbyLocations = likelihoodList.likelihoods;
-        [self.placesTableView reloadData];
+    [self.placesTableView addPullToRefreshWithActionHandler:^{
+        [[LUService shared] getNearbyLocations];
     }];
 }
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSUInteger count = self.nearbyLocations.count;
-    return count;
+    return [LUService shared].nearbyLocations.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LUPlacesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kLUPlacesTableViewCellIdentifier];
-    GMSPlaceLikelihood *likelihood = self.nearbyLocations[indexPath.row];
+    GMSPlaceLikelihood *likelihood = [LUService shared].nearbyLocations[indexPath.row];
     GMSPlace *place = likelihood.place;
     [cell configureCellForGMSPlace:place];
     return cell;
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - Notifications
 
+- (void)updateTableViewContents:(NSNotification *)notification {
+    
+    [self.placesTableView reloadData];
+    [self.placesTableView.pullToRefreshView stopAnimating];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 @end

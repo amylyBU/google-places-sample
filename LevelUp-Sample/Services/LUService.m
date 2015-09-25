@@ -7,13 +7,17 @@
 //
 
 #import "LUService.h"
+#import "LUPlacesViewController.h"
 @import GoogleMaps;
 
+
 static LUService *_shared;
+NSString * const kLocationsDidUpdateNotification = @"kLocationsDidUpdateNotification";
 
-@implementation LUService
 
-#pragma mark - Singleton
+@implementation LUService {
+    GMSPlacesClient *_placesClient;
+}
 
 + (instancetype)shared {
     static dispatch_once_t onceToken;
@@ -21,6 +25,19 @@ static LUService *_shared;
         _shared = [[LUService alloc] init];
     });
     return _shared;
+}
+
+- (void)getNearbyLocations {
+    _placesClient = [GMSPlacesClient sharedClient];
+    [_placesClient currentPlaceWithCallback:^(GMSPlaceLikelihoodList * _Nullable likelihoodList, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"ERROR %@", [error localizedDescription]);
+            return;
+        }
+        self.nearbyLocations = likelihoodList.likelihoods;
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLocationsDidUpdateNotification object:self];
+        
+    }];
 }
 
 @end

@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const kLocationsDidUpdateNotification;
+
 @interface LUService : NSObject
 
+@property (strong, nonatomic) NSArray *nearbyLocations;
+
 + (instancetype)shared;
+- (void)getNearbyLocations;
 
 @end

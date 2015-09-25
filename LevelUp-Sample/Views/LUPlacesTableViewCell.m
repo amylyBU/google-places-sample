@@ -16,6 +16,10 @@
 
 @implementation LUPlacesTableViewCell
 
+- (void)awakeFromNib {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+
 - (void)configureCellForGMSPlace:(GMSPlace *)place {
     self.nameLabel.text = place.name;
 }
